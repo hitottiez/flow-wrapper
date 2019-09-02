@@ -1,0 +1,3 @@
+[submodule "libs/pyboostcvconverter/pbcvt"]
+	path = libs/pyboostcvconverter/pbcvt
+	url = https://github.com/Algomorph/pyboostcvconverter.git
