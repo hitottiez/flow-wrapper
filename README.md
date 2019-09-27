@@ -1,54 +1,44 @@
 # OpenCV Optical Flow API Wrapper
+## Overview
+This library is a wrapper of OpenCV optical flow API (GPUver) on Python3.
 
-## 概要
+### Optical flow list
+- BroxFlow
+- TVL1Opticalflow
 
-OpenCVのBroxFlowとTVL1OpticalflowのGPU版をPython3で使用するためのライブラリです。
+### Output
+- RGB color image
+- X/Y grayscale image
 
-### 利用可能なオプティカルフロー
+### Usage
+refer examples/flow_webcam.py
 
-* BroxFlow
-* TVL1Opticalflow
+## Requirements
+- CUDA
+- Python (==ver3.5)
+- OpenCV (==ver4.x **WITH_CUDA=ON**)
+- Boost.Python (>1.68.0)
+- cmake (>=2.8)
 
-### 出力
-
-* RGBカラー画像による出力
-* X/Yモノクロ画像による出力
-
-### 使い方
-
-* examples/flow_webcam.pyを参照
-
-## 動作条件
-
-* CUDA
-* Python (==ver3.5)
-* OpenCV (==ver4.x **WITH_CUDA=ON**)
-* Boost.Python (>1.68.0)
-* cmake (>=2.8)
-
-## インストール
-
-まず、本ソースコードを「recursive」オプションをつけてクローンしてください
-
+## Install
+Clone this repository:
 ```bash
 $ git clone --recurslve <My repository URL>
 ```
 
-build.shを実行するとインストールできます
-
+Install:
 ```bash
 $ ./build.sh
 ```
 
-## ディレクトリ構成
-
-* examples
-    * 利用方法サンプルプログラム
-* libs
-    * 各種ライブラリ
-* py_broxflow
-    * BroxFlowのPythonラッパー実装
-* py_fastflow
-    * FastFlowのPythonラッパー実装
-* py_tvl1flow
-    * TVL1オプティカルフローのPythonラッパー実装
+## Directory structure
+- examples
+    - sample codes
+- libs
+    - libraries
+- py_broxflow
+    - Python wrapepr of BroxFlow
+- py_fastflow
+    - Python wrapepr of FastFlow
+- py_tvl1flow
+    - Python wrapepr of TVL1Opticalflow
